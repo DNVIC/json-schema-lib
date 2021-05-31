@@ -19,4 +19,4 @@ Extensible JSON Schema library with support for multi-file schemas using $ref
 
 Work In Progress
 --------------------------
-This library is still in development and is **NOT** ready to use yet.  Please feel free to review the source code, ask questions, or offer assistance.
+This library will never be finished unless someone else works on it; i just needed this specific version for a project.
