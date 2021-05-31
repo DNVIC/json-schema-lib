@@ -1,0 +1,114 @@
+{
+  "_args": [
+    [
+      "json-schema-lib@github:Lange/json-schema-lib#ac59fe29fad5c54647e4c483c7255a923cc430dd",
+      "D:\\Dev\\FMLayouts"
+    ]
+  ],
+  "_from": "json-schema-lib@github:Lange/json-schema-lib#ac59fe29fad5c54647e4c483c7255a923cc430dd",
+  "_id": "json-schema-lib@github:Lange/json-schema-lib#ac59fe29fad5c54647e4c483c7255a923cc430dd",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/json-schema-lib",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "git",
+    "raw": "json-schema-lib@github:Lange/json-schema-lib#ac59fe29fad5c54647e4c483c7255a923cc430dd",
+    "name": "json-schema-lib",
+    "escapedName": "json-schema-lib",
+    "rawSpec": "github:Lange/json-schema-lib#ac59fe29fad5c54647e4c483c7255a923cc430dd",
+    "saveSpec": "github:Lange/json-schema-lib#ac59fe29fad5c54647e4c483c7255a923cc430dd",
+    "fetchSpec": null,
+    "gitCommittish": "ac59fe29fad5c54647e4c483c7255a923cc430dd"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "github:Lange/json-schema-lib#ac59fe29fad5c54647e4c483c7255a923cc430dd",
+  "_spec": "github:Lange/json-schema-lib#ac59fe29fad5c54647e4c483c7255a923cc430dd",
+  "_where": "D:\\Dev\\FMLayouts",
+  "author": {
+    "name": "James Messinger",
+    "url": "http://jamesmessinger.com"
+  },
+  "browser": "dist/json-schema-lib.js",
+  "bugs": {
+    "url": "https://github.com/BigstickCarpet/json-schema-lib/issues"
+  },
+  "dependencies": {
+    "content-type": "^1.0.2",
+    "follow-redirects": "^1.2.3",
+    "mime-types": "^2.1.16",
+    "ono": "^4.0.2"
+  },
+  "description": "Extensible JSON Schema library with support for multi-file schemas using $ref",
+  "devDependencies": {
+    "chai": "^4.1.1",
+    "codacy-coverage": "^2.0.0",
+    "coveralls": "^2.11.9",
+    "eslint": "^4.5.0",
+    "eslint-config-modular": "^4.1.0",
+    "istanbul": "^0.4.5",
+    "karma": "^1.4.0",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^2.0.0",
+    "karma-cli": "^1.0.1",
+    "karma-coverage": "^1.1.1",
+    "karma-firefox-launcher": "^1.0.0",
+    "karma-host-environment": "^1.1.1",
+    "karma-ie-launcher": "^1.0.0",
+    "karma-mocha": "^1.2.0",
+    "karma-safari-launcher": "^1.0.0",
+    "karma-sauce-launcher": "^1.1.0",
+    "karma-sinon": "^1.0.5",
+    "karma-verbose-reporter": "0.0.6",
+    "mocha": "^3.5.0",
+    "npm-check": "^5.4.5",
+    "simplifyify": "^3.2.4",
+    "sinon": "^3.2.1",
+    "version-bump-prompt": "^3.0.1"
+  },
+  "files": [
+    "dist/json-schema-lib.js",
+    "dist/json-schema-lib.js.map",
+    "dist/json-schema-lib.min.js",
+    "dist/json-schema-lib.min.js.map",
+    "lib"
+  ],
+  "homepage": "https://github.com/BigstickCarpet/json-schema-lib",
+  "keywords": [
+    "json",
+    "schema",
+    "reference",
+    "pointer",
+    "jsonschema",
+    "json-schema",
+    "json-reference",
+    "json-pointer",
+    "$ref",
+    "resolve",
+    "dereference",
+    "bundle",
+    "validate"
+  ],
+  "license": "MIT",
+  "main": "lib/node.js",
+  "name": "json-schema-lib",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BigstickCarpet/json-schema-lib.git"
+  },
+  "scripts": {
+    "build": "simplifyify lib/browser.js --outfile dist/json-schema-lib.js --standalone jsonSchemaLib --bundle --debug --minify --test",
+    "bump": "bump --prompt --grep dist/* --tag --push --all",
+    "karma": "karma start --single-run",
+    "karma:cover": "karma start --single-run --cover",
+    "lint": "eslint lib test --fix",
+    "mocha": "mocha",
+    "mocha:cover": "istanbul cover _mocha --dir coverage/node",
+    "release": "npm run upgrade && npm run build && npm test && npm run bump && npm publish",
+    "test": "npm run mocha && npm run karma && npm run lint",
+    "upgrade": "npm-check -u"
+  },
+  "version": "0.0.6"
+}
